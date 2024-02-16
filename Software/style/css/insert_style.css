@@ -1,0 +1,10 @@
+.head {
+    margin: 10 10 auto;
+}
+
+.text {
+    background-color: #02F78E;
+    width: 250;
+    height: 250;
+    line-height: 30px;
+}

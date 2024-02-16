@@ -1,0 +1,34 @@
+body {
+    background-color: #66B3FF;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+}
+
+.center>h1 {
+    text-align: center;
+    padding: 0px 10px 10px;
+    border-bottom: 1px solid gray;
+}
+
+.center form .txt_field {
+    display: flex;
+    padding: 25px 30px 10px;
+}
+
+form .button {
+    height: 45px;
+}
+
+form>.button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}

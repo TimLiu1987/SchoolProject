@@ -1,0 +1,24 @@
+{
+    "destination": "Udc82e21e77ab91701700b2dcc08df877",
+    "events": [
+        {
+            "type": "message",   //取得目前Line Bot被觸發的原因
+            "message": {
+                "type": "text",  //取得當前訊息的類型
+                "id": "17370105071490",
+                "text": "Hi"     //取得當前訊息的內容
+            },
+            "webhookEventId": "01GNAN5WH6YY3XFG9M4WKV9ZDC",
+            "deliveryContext": {
+                "isRedelivery": false
+            },
+            "timestamp": 1672173777327,
+            "source": {
+                "type": "user",
+                "userId": "Uda6d9552e2dfd37fbf4ac280eb59f35f" //取得使用者在Line的ID
+            },
+            "replyToken": "624ddc27f65c4f55bb271f1e55964edd",
+            "mode": "active"
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"></meta>
+		<title>漿漿JavaScript小筆記</title>
+		
+		<style type="text/css">
+		.title{padding-top:10px;padding-bottom:10px;font-size:18px;font-weight:bold}
+		.code{font-size:18px}
+		.hilight{color:red}
+		</style>
+		
+		<!--
+		<script type="text/javascript">
+		var passcode = 123
+		do{
+			var user = prompt("enter passcode","")
+		}while(passcode!=user)
+		alert("pass")
+		</script>
+		-->
+	</head>
+	<body style="padding-left:15px">
+		<div class="code">
+			指令:<p/>
+			＜button onclick='document.getElementById("<span class="hilight">替換目標的id</span>").(<span class="hilight">替換的類型</span>)="(<span class="hilight">替換的結果</span>)"'>(<span class="hilight">按鈕文字</span>)＜/button＞
+		</div>
+		
+		<div>
+			<div class="title">目標:文字替換(.innerHTML)</div>
+			<p id="word">Please click the button below.</p>
+			<button onclick='document.getElementById("word").innerHTML="Thank you, you did a great job"'>Click me!</button>
+			<p/>
+		</div>
+		
+		<div>
+			<div class="title">目標:圖片替換(.src)</div>
+			<button onclick='document.getElementById("pic").src="2-0.png"'>2.0版本圖</button>
+			<button onclick='document.getElementById("pic").src="2-1.png"'>2.1版本圖</button>
+			<button onclick='document.getElementById("pic").src="2-2.png"'>2.2版本圖</button>
+			<p/>
+			<img id="pic" src="1.6版本圖.png" style="width:640px;height:365px">
+		</div>
+		
+		<div>
+			<div class="title">目標:隱藏or新增(.style.display)</div>
+			<p id="hide">someword</p>
+			<button onclick='document.getElementById("hide").style.display="none"'>Click me to hide!</button>
+			<p id="show" style="display:none">oh I show up again</p><p/>
+			<button onclick='document.getElementById("show").style.display="block"'>Click me to show!</button>
+		</div>
+		<div>
+			<button onclick="document.getElementById('time').innerHTML=Date()">Show the time</button>
+			<p id="time"></p>
+		</div>
+		<div class=title>變數類型</div>
+		<div>
+			<div>
+				var型別可隨意賦值，變數名稱可重複，有全域變數的特性：<p/>
+				<span class="hilight">var var1 = value1 </span>
+			</div>
+			
+			<div>
+				let型別必須設定初始值，變數名稱不可重複，為普通變數：<p/>
+				<span class="hilight">let var2 = value2</span>
+			</div>
+			
+			<div>
+				const型別必須設定初始值，不可修改：<p/>
+				<span class="hilight">const var3 = value3</span>
+			</div>
+			<script>
+			
+			
+			</script>
+		</div>
+		
+		
+		
+		
+	</body>
+
+</html>

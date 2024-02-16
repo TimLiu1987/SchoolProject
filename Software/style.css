@@ -1,0 +1,135 @@
+*
+{	
+	margin: 0;
+	padding: 0;
+	box-sizing:bolder-box;
+	font-family: consolas;
+}
+section
+{	
+	width:100%;
+	min-height:100vh;
+	padding:100px;
+	background: #001d30;
+	animation:changeBg 5s linear infinite;
+}
+@keyframes changeBg 
+{
+	to{
+		filter:hue-rotate(360deg);
+	}
+}
+
+section h2
+{
+	padding-top: 300px;
+	color: #666;
+	font-size: 4em;
+	margin-bottom: 20px;
+}
+section p
+{
+	color: #666;
+	font-size: 1.2em;
+}
+/*網頁滾輪設計*/
+::-webkit-scrollbar
+{
+	width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+	background: linear-gradient(transparent,#30ff00);
+	border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background: linear-gradient(transparent,#00c6ff);
+}
+
+/*loading 設計*/
+.loading
+{
+	position:absolute;
+	width:150px;
+	height:150px;
+	background:linear-gradient(to top,#001d30 40%,#51eeee);
+	border-radius:50%;
+	animation: rotate 1s  linear infinite;	
+}
+@keyframes rotate 
+{
+	to
+	{
+		transform: rotate(360deg);
+	}
+}
+.loading::before
+{
+	content:'';
+	position:absolute;
+	background:#001d30;
+	inset:20px 20px 0 0;
+	border-radius:50%
+}
+.loading::after
+{
+	content:'';
+	position:absolute;
+	top:50px;
+	right:-8px;
+	width:40px;
+	height:40px;
+	background:#51eeee;
+	border-radius:50%;
+	box-shadow: 0 0 5px  #51eeee,0 0 25px  #51eeee,0 0 50px  #51eeee,0 0 75px  #51eeee;
+}
+
+/*loader 設計*/
+.loader
+{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #1a1a1f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>漿漿HTML、CSS小筆記</title>
+	<style>
+		.keyword {
+			color: red;
+			font-weight: bold
+		}
+
+		.border {
+			border: 2px solid blue
+		}
+
+		.title {
+			text-align: center;
+			font-weight: bold;
+			font-size: 24px;
+			margin-top: 30px;
+		}
+
+		.stitle {
+			font-size: 20px;
+			margin-bottom: 3px;
+		}
+
+		.box {
+			width: 700px;
+			margin: 15px;
+			border: 1px solid gray;
+			padding: 5px;
+		}
+
+		.firstpart {
+			font-family: "微軟正黑體";
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="title">HTML程式碼</div>
+	<div="firstpart">
+		<div class="box">
+			最開頭寫 ＜!DOCTYPE html＞<br />
+			程式結構：<br />
+			＜!DOCTYPE html＞<br />
+			＜head＞<br />
+			＜body＞<br />
+		</div>
+
+		<div class="box">
+			<span class="stitle">調整字體</span><br />
+			標題：＜h6＞(大)～＜h1＞(小)
+			<b>加粗：＜b＞</b><br />
+			<i>斜體：＜i＞</i>--------><b><i><u>疊加</b></i></u><br />
+			<u>底線：＜u＞</u><br />
+		</div>
+
+		<div class="box">
+			<span class="stitle">加入照片：</span>＜img src ="檔案路徑"＞(若在同一資料夾則直接打檔名即可)
+		</div>
+
+		<div class="box">
+			列表：＜ul＞
+			<ul>
+				<li>項目：＜li＞</li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<span class="stitle">超連結：</span>＜a href="網址"＞ ex.<a href=https://www.google.com.tw />Google</a>
+		</div>
+
+		<div class="box">
+			<span class="stitle">註解：</span>用 ＜!--內容--＞ 將內容註解隱藏
+		</div>
+
+		<div class="box">
+			<span class="stitle">表格：＜table＞</span><br />
+			屬性：
+			<ul>
+				<li>框線：＜border＞ <span class="keyword">=</span> "1(px)"</li>
+				<li>寬度：＜width＞ <span class="keyword">=</span> "300(px))"</li>
+				<li>周圍填塞：＜cellpadding＞ <span class="keyword">=</span> "5(px)"</li>
+			</ul>
+			</li>
+			ex. <table border=1 width=300 cellpadding=5>table border=1 width=300 cellpadding=5
+				<!--用style標籤將寬度統一調整成固定比例
+				<style>
+				table tr td{
+					width: 33%;
+				}
+				</style>
+			-->
+				<tr>
+					<!--橫列-->
+					<td width="33%">屬性</td>
+					<!--直行-->
+					<td width="33%">橫列</td>
+					<td width="33%">tr</td>
+				</tr>
+				<tr>
+					<td>直行</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>td</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="box">
+			<span class="stitle">讓網頁可以打中文：</span>編碼改成utf-8並在head部分加上＜meta charset = "utf-8"/＞
+		</div>
+		</div>
+		<h3 class="title">CSS程式碼</h3>
+		CSS基礎語法
+		<ul>
+			<li>段落：＜div＞<br></li>
+			在＜div＞後加上style<span class="keyword">=</span>"某項屬性<span class="keyword"> : </span>某項的設定值<span
+				class="keyword"> ;
+			</span>另一項屬性<span class="keyword">:</span>另一項設定值"<br>
+			因為＜div＞標籤會使文字強制換行，若只想在行內加上屬性，可以使用＜span＞標籤
+			<ul>
+				<li>字體：font-weight ex. <span style="font-weight:bold">font-weight:bold(粗體)</span></li>
+				<li>文字大小：font-size ex. <span style="font-size:20px">font-weight:20px</span></li>
+				<li>顏色：color ex. <span style="color:green">color:green</span></li>
+			</ul>
+			<li>CSS Box Model</li>
+			<ul>
+				<li>與某方向區塊的距離：margin<br /></li>
+				<div style="margin-top:10px;margin-bottom:10px">ex. margin-top:10px ; margin-bottom:10px</div>
+
+				<li style="padding-bottom:2px">邊框：border<br /></li>
+				ex. <span style="border:2px solid blue">style="border:(寬度)2px (樣式)solid (顏色)blue</span>
+
+				<li style="padding-bottom:5px">填充：padding<br /></li>
+				ex. <span style="padding:5px;border:1px dashed red">style="padding:5px ; border:1px dashed red</span>
+
+				<li style="padding-top:5px">背景顏色：background-color</li>
+				<div style="margin-bottom:3px;width:500px;background-color:pink">
+					ex. width:500px;background-color:pink
+				</div>
+
+				<li>寬度：width<br />
+					高度：height<span
+						style="position:relative;bottom:1px;margin-top:10px;border:2px solid red;padding-top:15px;font-weight:bold">
+						<span style="position:relative;top:-7px">*只能在區塊式的標籤內使用這兩種屬性</span></span></li>
+				<div style="margin-top:2px;width:800px;height:40px;border:1px solid orange">
+					ex. style="width:800px;height:40px;border:1px solid orange"
+				</div>
+
+				<li>定位：position<br />
+					絕對定位：absolute 以網頁最左上角為定位基準點進行定位<br />
+					相對定位：relative 以程式碼所在區塊的左上角為基準點進行定位</li>
+			</ul>
+			<li>CSS選擇器</li>
+			<ul>
+				<li>在＜head＞區塊使用＜style＞標籤，在＜style＞標籤加入屬性type="text/css"<br />
+					在＜style＞標籤內以{}包裹想使用的屬性設定，在{前方加入對此設定的命名並在名稱的前方加上dot(.)<br />
+					在使用上以屬性 class=設定名稱 來做對應<br />
+					ex.<br />
+					.keyword{color:red;font-weight:bold} --><span class="keyword"> ＜span class="keyword"＞</span><br />
+					.border{border:2px solid blue} --><span class="border"> ＜span class="border"＞</span></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</ul>
+</body>
+
+</html>
